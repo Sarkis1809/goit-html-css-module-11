@@ -1,0 +1,111 @@
+.decorative-line {
+  width: 60px;
+  height: 4px;
+  background-color: #f38181;
+}
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  color: #fff;
+  stroke: currentColor;
+  fill: currentColor;
+  -webkit-transition: 0.2s linear;
+  -o-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  color: #fff;
+  &-wrapper {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    padding-top: 35px;
+  }
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  line-height: 1;
+  &:focus {
+    outline: -webkit-focus-ring-color auto 5px;
+  }
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  &__actions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    & .action__icon {
+      margin-left: 40px;
+      height: 20px;
+      width: 20px;
+      -webkit-transition: 0.2s linear;
+      -o-transition: 0.2s linear;
+      transition: 0.2s linear;
+      &:hover,
+      &:focus {
+        color: #fce38a;
+        cursor: pointer;
+      }
+    }
+  }
+  & .list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    &__item:not(:last-child) {
+      margin-right: 55px;
+    }
+    &__link {
+      text-transform: uppercase;
+      font-weight: bold;
+      -webkit-transition: color 0.2s linear;
+      -o-transition: color 0.2s linear;
+      transition: color 0.2s linear;
+      position: relative;
+      z-index: 1;
+      font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+      padding: 10px 0;
+      &:hover,
+      &:focus {
+        color: #fce38a;
+        &:before {
+          width: 100%;
+        }
+      }
+      &:before {
+        display: block;
+        content: '';
+        position: absolute;
+        bottom: 0;
+        width: 0;
+        height: 4px;
+        background-color: #fce38a;
+        -webkit-transition: 0.2s linear;
+        -o-transition: 0.2s linear;
+        transition: 0.2s linear;
+      }
+    }
+  }
+}
