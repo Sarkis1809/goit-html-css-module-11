@@ -403,20 +403,18 @@ textarea {
   font: inherit;
   /* 2 */
 }
-
-.title,
-.section-title {
-  font-family: "Montserrat", Arial, Helvetica, sans-serif;
-}
-
-.section-title {
+.hero__title-section,
+.services__title-section,
+.team__title-section {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
   text-align: center;
+  font-family: "Montserrat", Arial, Helvetica, sans-serif
 }
-
-.decorative-title {
+.hero__title-decorative,
+.services__title-decorative,
+.team__title-decorative {
   font-family: "Kaushan Script", cursive;
 }
 

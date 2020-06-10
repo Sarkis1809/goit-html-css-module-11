@@ -67,13 +67,14 @@
     display: block;
   }
   &__title {
-    color: #fff;
-    &.decorative-title {
+    &-decorative {
       font-size: 72px;
       text-transform: none;
+      color: #fff;
     }
-    &.section-title {
+    &-section {
       font-size: 150px;
+      color: #fff;
     }
   }
   &__button {

@@ -1,10 +1,4 @@
-@mixin service__bg {
-  margin-right: 25px;
-  width: 35px;
-  height: 35px;
-  -o-object-fit: contain;
-  object-fit: contain;
-}
+
 .service {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -69,11 +63,11 @@
   flex-flow: row wrap;
   margin-top: 65px;
   &__title {
-    &.section-title {
+    &-section {
       font-size: 30px;
       margin-bottom: 40px;
     }
-    &.decorative-title {
+    &-decorative {
       font-size: 24px;
       margin-bottom: 20px;
     }
